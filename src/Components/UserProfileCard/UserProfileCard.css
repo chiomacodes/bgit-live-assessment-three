@@ -1,0 +1,46 @@
+.upc {
+    width: 350px;
+    margin: 20px;
+      border-radius: 4px;
+      padding-bottom: 20px;
+      background: white;
+      justify-content: center;
+}
+.gradient {
+    background-image:linear-gradient(#f5ad87, #f85903);
+    height: 125px;
+    border-radius: 4px 4px 0px 0px;
+}
+.profile-down img {
+height: 150px;
+border-radius: 100px;
+margin-top: -75px;
+padding: 5px;
+background: white;
+}
+.profile-name {
+    font-size: 36px;
+    font-weight: 700;
+    
+}
+.profile-age {
+    padding: 20px 40px;
+    font-size: 28px;
+}
+
+.profile-location {
+        padding: 20px 40px;
+        font-size: 28px;
+}
+.profile-button {
+    font-size: 16px;
+    background: #2b5dff;
+    margin: 10px 100px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
