@@ -1,0 +1,63 @@
+Assessment 3 Theory Questions (Started at 16.28, Finished at 19.28 19/11/2023)
+
+Q1) Explain the concept of React components. How do they contribute to building user interfaces in React?
+
+A1): React components are independent bits of the user interface (UI). They also have the ability to be reusable blocks of code for recurring pages. Each component contributes to the UI by creating every aspect of the app, all united under the root component (or app component, usually App.js), which is resposnsible for connecting all of the other components together.
+
+
+
+
+
+
+Q2) What is JSX in React? Provide an example of JSX code and explain how it's transformed into JavaScript.
+
+A2) JSX stands for Javascript XML, which is an abbreviated amalgamation of Javascript and HTML. It basically allows developers to write HTML tag code within Javascript files, therefore making it easier to write HTML in React projects too. Here's a theoretical example of JSX below:
+
+const myElement = <h2>Chioma Codes is a BGIT graduate-to-be!</h2>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+
+Because the HTML code (<h5> element) was inputted as a variable, the JSX code translated it easily into Javascript through the DOM, merging the two languages together.
+
+
+
+
+
+Q3) Briefly describe the virtual DOM in React. How does it contribute to improving performance in web applications?
+
+A3) The virtual DOM is a lightweight version of the original DOM (Document Object Model) that can carry out changes quickly without having to load the heavier aspects of the DOM every time a change is made. This gives web applications the ability to load quickly and effortlessly which looks attractive and appealing to the user.
+
+
+
+
+
+
+Q4) List and explain three main phases of a React component's lifecycle. Provide an example of a situation where each phase might be useful.
+
+A4)
+Mounting - This means that elements are inputted into the DOM. A similar understanding is to liken it to submission. There are several built-in methods that accompany this action in React and they are: constructor(), getDerivedStateFromProps(), render() and componentDidMount(). The render() call is essential and will always be called, but the other methods can be called by the developer if that information is specifically sought after.
+
+Updating - This means that a React component is updated if either its 'state' or 'prop(s)' is modified. The following methods are also called in order, with, again, render() being mandatory and unnegotiably called:
+getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate() and componentDidUpdate().
+
+Unmounting - This means that a component is removed from the DOM. A similar understanding is to liken it to deletion. The only built-in method that accompanies this action in React is called componentWillUnmount().
+
+
+
+
+
+
+Q5) Discuss the difference between props and state in React. In what scenarios would you use props, and in what scenarios would you use state?
+
+A5) Props and state are related like parents and children. Whatever the state is set to as a variable, the prop(s) will inherit those variable traits because props can be passed down when it's called, as an example. The state of one component will often become the props of a child component. With state components, they can manage and create their own data variables, whereas dot notation is used to access, receive and render the prop (child) component data in order for it to work. State could be used with setState().
+
+
+
+
+
+Q6) Explain the significance of the shouldComponentUpdate method in the component lifecycle. How does it impact the rendering of components?
+
+A6) The shouldComponentUpdate() method is special because it facilitates boolean outcomes. This method communicates to React whether data is rendered true/false or not.
+
+
